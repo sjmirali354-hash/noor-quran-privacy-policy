@@ -1,62 +1,740 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Copy the entire <head> section (CSS included) from your Privacy Policy file here without changing anything -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#021c12" />
+  <title>Noor Quran Terms of Service</title>
+
+  <style>
+    :root{
+      --bg:#021c12;
+      --bg-deep:#00180f;
+      --card:#09291d;
+      --border:#0f4a34;
+      --text:#23d58a;
+      --heading:#58e6aa;
+      --green:#20d783;
+      --cyan:#25d9d0;
+      --blue:#7b7cff;
+      --yellow:#ffd231;
+      --pink:#ff5e85;
+      --purple:#d36cff;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      margin:0;
+      min-height:100vh;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(
+          circle at 15% 0%,
+          rgba(19,100,61,.22),
+          transparent 30%
+        ),
+        linear-gradient(
+          180deg,
+          #032419 0%,
+          var(--bg) 45%,
+          var(--bg-deep) 100%
+        );
+      line-height:1.62;
+    }
+
+    .page{
+      width:min(100%, 760px);
+      margin:0 auto;
+      padding:18px 16px 44px;
+    }
+
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:16px;
+    }
+
+    .back,
+    .shield{
+      width:42px;
+      height:42px;
+      border-radius:50%;
+      border:1px solid #0d5136;
+      display:grid;
+      place-items:center;
+      color:var(--green);
+      background:rgba(7,47,32,.72);
+      text-decoration:none;
+      font-size:25px;
+      flex:0 0 auto;
+    }
+
+    .title-wrap{
+      flex:1;
+      min-width:0;
+    }
+
+    h1{
+      margin:0;
+      font-size:clamp(22px, 5vw, 31px);
+      line-height:1.15;
+      color:var(--heading);
+      font-weight:800;
+    }
+
+    .package{
+      margin-top:3px;
+      color:#0c8d58;
+      font-size:13px;
+    }
+
+    .policy-card{
+      background:
+        linear-gradient(
+          180deg,
+          rgba(12,47,34,.97),
+          rgba(6,36,25,.97)
+        );
+      border:1px solid var(--border);
+      border-radius:22px;
+      overflow:hidden;
+      margin-bottom:17px;
+      box-shadow:0 10px 28px rgba(0,0,0,.12);
+    }
+
+    .commitment{
+      padding:18px 20px 20px;
+    }
+
+    .card-header{
+      display:flex;
+      align-items:center;
+      gap:11px;
+      padding:15px 18px;
+      font-size:18px;
+      font-weight:800;
+      color:var(--heading);
+      border-bottom:1px solid rgba(27,126,83,.35);
+      background:
+        linear-gradient(
+          90deg,
+          rgba(13,65,43,.9),
+          rgba(13,55,39,.45)
+        );
+    }
+
+    .card-body{
+      padding:17px 20px 20px;
+      font-size:16px;
+    }
+
+    .commitment .card-header{
+      padding:0 0 10px;
+      border:0;
+      background:none;
+    }
+
+    .icon{
+      width:23px;
+      text-align:center;
+      font-size:21px;
+      line-height:1;
+    }
+
+    .accent-cyan{
+      border-color:#0d4f4d;
+    }
+
+    .accent-cyan .card-header{
+      color:var(--cyan);
+      background:
+        linear-gradient(
+          90deg,
+          rgba(10,70,65,.78),
+          rgba(8,52,39,.38)
+        );
+    }
+
+    .accent-blue{
+      border-color:#263c72;
+    }
+
+    .accent-blue .card-header{
+      color:#9692ff;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(43,50,107,.7),
+          rgba(15,50,38,.38)
+        );
+    }
+
+    .accent-yellow{
+      border-color:#544719;
+    }
+
+    .accent-yellow .card-header{
+      color:var(--yellow);
+      background:
+        linear-gradient(
+          90deg,
+          rgba(76,67,17,.58),
+          rgba(15,50,38,.35)
+        );
+    }
+
+    .accent-purple{
+      border-color:#4b315a;
+    }
+
+    .accent-purple .card-header{
+      color:var(--purple);
+      background:
+        linear-gradient(
+          90deg,
+          rgba(67,40,83,.65),
+          rgba(15,50,38,.35)
+        );
+    }
+
+    .accent-pink{
+      border-color:#5a2736;
+    }
+
+    .accent-pink .card-header{
+      color:var(--pink);
+      background:
+        linear-gradient(
+          90deg,
+          rgba(83,36,51,.62),
+          rgba(15,50,38,.35)
+        );
+    }
+
+    p{
+      margin:0 0 10px;
+    }
+
+    p:last-child{
+      margin-bottom:0;
+    }
+
+    ul{
+      margin:8px 0 0;
+      padding-left:22px;
+    }
+
+    li{
+      margin:5px 0;
+    }
+
+    strong{
+      color:#ccffe3;
+    }
+
+    .verse{
+      border-top:1px solid rgba(42,119,82,.25);
+      margin-top:16px;
+      padding-top:15px;
+      text-align:right;
+      color:#168f5a;
+      font-family:"Noto Naskh Arabic","Amiri","Segoe UI",serif;
+      font-size:18px;
+    }
+
+    .translation{
+      text-align:right;
+      color:#0b7549;
+      font-size:13px;
+      margin-top:4px;
+    }
+
+    .contact-box{
+      border:1px solid #0d5638;
+      padding:18px 20px 20px;
+    }
+
+    .contact-title{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      color:#37e29b;
+      font-size:18px;
+      font-weight:800;
+      margin-bottom:10px;
+    }
+
+    .team{
+      color:#187f51;
+      font-size:13px;
+      margin-top:7px;
+    }
+
+    .email{
+      display:inline-flex;
+      align-items:center;
+      gap:9px;
+      margin-top:12px;
+      padding:10px 14px;
+      border-radius:14px;
+      border:1px solid #137348;
+      background:
+        linear-gradient(
+          180deg,
+          #0d4932,
+          #0a3928
+        );
+      color:#83f2bd;
+      text-decoration:none;
+      font-weight:700;
+      word-break:break-all;
+    }
+
+    .updated{
+      text-align:center;
+      font-size:13px;
+      color:#0d6f45;
+      margin:20px 0 14px;
+    }
+
+    footer{
+      text-align:center;
+      color:#0a6941;
+      font-size:13px;
+      padding:18px 0 4px;
+    }
+
+    @media (max-width:480px){
+      .page{
+        padding:14px 14px 34px;
+      }
+
+      .policy-card{
+        border-radius:18px;
+      }
+
+      .card-header{
+        font-size:16px;
+        padding:14px 16px;
+      }
+
+      .card-body{
+        font-size:15px;
+        padding:15px 17px 18px;
+      }
+
+      .commitment{
+        padding:16px 17px 18px;
+      }
+
+      .back,
+      .shield{
+        width:38px;
+        height:38px;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <main class="page">
 
-<header class="header">
-    <h1>Terms of Service</h1>
-    <p>Last Updated: July 2026</p>
-</header>
+    <header class="topbar">
+      <a class="back" href="javascript:history.back()" aria-label="Go back">
+        ‹
+      </a>
 
-<main class="container">
+      <div class="title-wrap">
+        <h1>Terms of Service</h1>
+        <div class="package">
+          Noor Quran · com.sj64noorquran
+        </div>
+      </div>
 
-<section class="content-card">
-    <h2>1. Welcome</h2>
-    <p>
-        Welcome to Noor Quran. By downloading, installing, or using this application,
-        you agree to be bound by these Terms of Service. If you do not agree with any
-        part of these terms, please discontinue using the application.
-    </p>
-</section>
+      <div class="shield" aria-hidden="true">
+        ♢
+      </div>
+    </header>
 
-<section class="content-card">
-    <h2>2. About Noor Quran</h2>
-    <p>
-        Noor Quran is an Islamic application that provides the Holy Quran, translations,
-        audio recitations, Prayer Times, Qibla Direction, Islamic Calendar, Tasbeeh,
-        Bookmarks, Favorites, Notifications, and other Islamic features for educational
-        and personal use.
-    </p>
-</section>
+    <section class="policy-card commitment">
+      <div class="card-header">
+        <span class="icon">♢</span>
+        <span>Welcome to Noor Quran</span>
+      </div>
 
-<section class="content-card">
-    <h2>3. License</h2>
-    <p>
-        Noor Quran grants you a limited, non-exclusive, non-transferable, and revocable
-        license to use the application for personal, non-commercial purposes in
-        accordance with these Terms.
-    </p>
-</section>
+      <p>
+        These Terms of Service govern your use of the Noor Quran
+        application. By downloading, installing, or using the app,
+        you agree to these Terms. If you do not agree, please stop
+        using the app.
+      </p>
 
-<section class="content-card">
-    <h2>4. Holy Quran & Translations</h2>
-    <p>
-        We strive to provide accurate Quranic content. However, translations are provided
-        by third-party sources and may contain interpretation differences or errors.
-        Noor Quran does not guarantee that every translation is completely accurate
-        and accepts no responsibility for any translation-related inaccuracies.
-    </p>
-</section>
+      <div class="verse" lang="ar" dir="rtl">
+        وَقُل رَّبِّ زِدْنِي عِلْمًا
+      </div>
 
-<section class="content-card">
-    <h2>5. Quran Audio</h2>
-    <p>
-        Audio recitations are provided through third-party services. Audio playback,
-        streaming, or downloads may occasionally be unavailable due to server,
-        internet, or technical issues. Noor Quran does not guarantee uninterrupted
-        availability of audio services.
-    </p>
-</section>
+      <div class="translation">
+        “My Lord, increase me in knowledge.” — Quran 20:114
+      </div>
+    </section>
+
+    <section class="policy-card">
+      <div class="card-header">
+        <span class="icon">▣</span>
+        <span>Purpose of the App</span>
+      </div>
+
+      <div class="card-body">
+        <p>
+          Noor Quran is provided for personal, educational, and
+          devotional use.
+        </p>
+
+        <p>
+          Features may include Quran reading, translations, Arabic
+          recitation, audio downloads, prayer times, Qibla direction,
+          Islamic calendar, notifications, bookmarks, favorites,
+          search, and digital Tasbeeh.
+        </p>
+
+        <p>
+          Features may be changed, improved, restricted, or removed
+          in future updates.
+        </p>
+      </div>
+    </section>
+
+    <section class="policy-card accent-cyan">
+      <div class="card-header">
+        <span class="icon">☰</span>
+        <span>Quran Text &amp; Translations</span>
+      </div>
+
+      <div class="card-body">
+        <p>
+          We make reasonable efforts to provide accurate Quranic
+          content. However, digital display, formatting, fonts,
+          datasets, or technical errors may affect how content
+          appears.
+        </p>
+
+        <p>
+          If you notice a possible error in the Arabic text, verify it
+          with an authenticated Mushaf and contact us.
+        </p>
+
+        <p>
+          The Quran was revealed in Arabic. Translations are
+          interpretations of its meaning and may differ between
+          translators or contain mistakes, omissions, or outdated
+          wording.
+        </p>
+
+        <p>
+          Translations may also fail to load because of internet,
+          server, API, device, or technical problems.
+        </p>
+
+        <p>
+          <strong>
+            Noor Quran does not guarantee the accuracy or continuous
+            availability of every translation.
+          </strong>
+        </p>
+
+        <p>
+          For important religious questions, consult the Arabic text,
+          reliable Tafsir, and a qualified Islamic scholar.
+        </p>
+      </div>
+    </section>
+
+    <section class="policy-card accent-purple">
+      <div class="card-header">
+        <span class="icon">◖</span>
+        <span>Quran Audio &amp; Downloads</span>
+      </div>
+
+      <div class="card-body">
+        <p>
+          Quran recitations may be streamed or downloaded through
+          third-party services.
+        </p>
+
+        <p>
+          Audio playback or downloads may fail because of network
+          interruptions, server problems, storage limitations,
+          permissions, device restrictions, or other technical issues.
+        </p>
+
+        <p>
+          Downloaded audio may be deleted if you clear app data,
+          uninstall the app, reset your device, or use storage-cleaning
+          tools.
+        </p>
+
+        <p>
+          We do not guarantee permanent storage or availability of
+          downloaded audio.
+        </p>
+      </div>
+    </section>
+
+    <section class="policy-card accent-yellow">
+      <div class="card-header">
+        <span class="icon">⌖</span>
+        <span>Prayer Times, Qibla &amp; Islamic Calendar</span>
+      </div>
+
+      <div class="card-body">
+        <p>
+          Prayer times, Qibla direction, and Hijri dates are provided
+          as helpful estimates.
+        </p>
+
+        <p>
+          Results may vary because of location accuracy, calculation
+          method, device sensors, time-zone settings, local moon
+          sightings, or technical limitations.
+        </p>
+
+        <p>
+          For important religious observance, verify prayer times,
+          Qibla direction, and Islamic dates with your local mosque or
+          a recognized Islamic authority.
+        </p>
+      </div>
+    </section>
+
+    <section class="policy-card accent-blue">
+      <div class="card-header">
+        <span class="icon">🔔</span>
+        <span>Notifications &amp; Local Data</span>
+      </div>
+
+      <div class="card-body">
+        <p>
+          Prayer reminders and other notifications may be delayed,
+          blocked, or missed because of device settings, battery
+          optimization, permissions, operating-system restrictions,
+          or technical errors.
+        </p>
+
+        <p>
+          Do not rely only on app notifications for important
+          obligations.
+        </p>
+
+        <p>
+          Bookmarks, favorites, Tasbeeh counts, settings, and
+          downloaded content may be stored locally on your device.
+        </p>
+
+        <p>
+          This data may be lost if app data is cleared, the app is
+          uninstalled, the device is reset, or a technical problem
+          occurs.
+        </p>
+      </div>
+    </section>
+
+    <section class="policy-card accent-pink">
+      <div class="card-header">
+        <span class="icon">$</span>
+        <span>Third-Party Services &amp; Advertising</span>
+      </div>
+
+      <div class="card-body">
+        <p>
+          Noor Quran may use third-party APIs, hosting services,
+          content providers, and Google AdMob to provide translations,
+          audio, prayer information, and advertisements.
+        </p>
+
+        <p>
+          These services operate under their own terms and privacy
+          policies.
+        </p>
+
+        <p>
+          We are not responsible for third-party outages, content
+          errors, policy changes, advertisements, or service
+          availability.
+        </p>
+      </div>
+    </section>
+
+    <section class="policy-card">
+      <div class="card-header">
+        <span class="icon">✓</span>
+        <span>Acceptable Use</span>
+      </div>
+
+      <div class="card-body">
+        <p>
+          You agree to use Noor Quran only for lawful and personal
+          purposes. You must not:
+        </p>
+
+        <ul>
+          <li>
+            Misuse, damage, disrupt, or interfere with the app or its
+            services.
+          </li>
+
+          <li>
+            Reverse engineer, copy, sell, redistribute, or
+            commercially exploit the app without permission.
+          </li>
+
+          <li>
+            Remove copyright, attribution, trademark, or legal
+            notices.
+          </li>
+
+          <li>
+            Use the app or its content for unlawful, deceptive, or
+            harmful activity.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="policy-card accent-cyan">
+      <div class="card-header">
+        <span class="icon">©</span>
+        <span>Intellectual Property</span>
+      </div>
+
+      <div class="card-body">
+        <p>
+          The Noor Quran name, design, logo, interface, graphics, and
+          original software are protected by applicable
+          intellectual-property laws.
+        </p>
+
+        <p>
+          Quran text, translations, recitations, and third-party
+          materials remain the property of their respective owners or
+          providers.
+        </p>
+      </div>
+    </section>
+
+    <section class="policy-card accent-yellow">
+      <div class="card-header">
+        <span class="icon">!</span>
+        <span>Disclaimer of Warranties</span>
+      </div>
+
+      <div class="card-body">
+        <p>
+          Noor Quran is provided on an <strong>“AS IS”</strong> and
+          <strong>“AS AVAILABLE”</strong> basis.
+        </p>
+
+        <p>
+          We do not guarantee that the app will always be accurate,
+          uninterrupted, secure, compatible with every device, or
+          free from errors.
+        </p>
+
+        <p>
+          The app is a helpful Islamic utility and is not a replacement
+          for qualified religious guidance or official local religious
+          authorities.
+        </p>
+      </div>
+    </section>
+
+    <section class="policy-card accent-pink">
+      <div class="card-header">
+        <span class="icon">⚠</span>
+        <span>Limitation of Liability</span>
+      </div>
+
+      <div class="card-body">
+        <p>
+          To the maximum extent permitted by law, Noor Quran and its
+          developer will not be liable for direct, indirect,
+          incidental, special, or consequential loss arising from use
+          of the app or inability to use it.
+        </p>
+
+        <p>
+          This includes translation errors, inaccurate prayer times,
+          Qibla or calendar differences, missed notifications,
+          unavailable services, lost bookmarks or favorites, deleted
+          audio, data loss, and third-party service failures.
+        </p>
+      </div>
+    </section>
+
+    <section class="policy-card">
+      <div class="card-header">
+        <span class="icon">↻</span>
+        <span>Updates &amp; Changes to These Terms</span>
+      </div>
+
+      <div class="card-body">
+        <p>
+          We may update the app or these Terms when necessary for new
+          features, technical improvements, security, legal
+          requirements, or service changes.
+        </p>
+
+        <p>
+          Updated Terms become effective when published on this page
+          or within the app.
+        </p>
+
+        <p>
+          Continued use of Noor Quran after an update means that you
+          accept the revised Terms.
+        </p>
+      </div>
+    </section>
+
+    <section class="policy-card contact-box">
+      <div class="contact-title">
+        <span>✉</span>
+        <span>Contact Us</span>
+      </div>
+
+      <p>
+        If you have questions, suggestions, or concerns about these
+        Terms of Service, please contact the Noor Quran Team:
+      </p>
+
+      <div class="team">
+        The Noor Quran Team
+      </div>
+
+      <a class="email" href="mailto:easygroupjoin@gmail.com">
+        <span>✉</span>
+        easygroupjoin@gmail.com
+      </a>
+    </section>
+
+    <div class="updated">
+      Last updated: 21 July 2026 · Effective immediately
+    </div>
+
+    <footer>
+      Noor Quran © 2026 · The Noor Quran Team
+    </footer>
+
+  </main>
+</body>
+          </html>
