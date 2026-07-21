@@ -1,392 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#021c12" />
-<title>Noor Quran Privacy Policy</title>
-  <style>
-    :root{
-      --bg:#021c12;
-      --bg-deep:#00180f;
-      --card:#09291d;
-      --card-2:#0b3022;
-      --border:#0f4a34;
-      --text:#23d58a;
-      --muted:#10985f;
-      --heading:#58e6aa;
-      --green:#20d783;
-      --cyan:#25d9d0;
-      --blue:#7b7cff;
-      --yellow:#ffd231;
-      --pink:#ff5e85;
-      --purple:#d36cff;
-      --white:#f6fffa;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - Noor Quran</title>
 
-    *{box-sizing:border-box}
+<meta name="theme-color" content="#021c12">
 
-    html{scroll-behavior:smooth}
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter,Arial,sans-serif;
+}
 
-    body{
-      margin:0;
-      min-height:100vh;
-      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", Roboto, Arial, sans-serif;
-      color:var(--text);
-      background:
-        radial-gradient(circle at 15% 0%, rgba(19,100,61,.22), transparent 30%),
-        linear-gradient(180deg, #032419 0%, var(--bg) 45%, var(--bg-deep) 100%);
-      line-height:1.62;
-    }
+body{
+background:#021c12;
+color:#29d98e;
+line-height:1.7;
+padding:16px;
+}
 
-    .page{
-      width:min(100%, 760px);
-      margin:0 auto;
-      padding:18px 16px 44px;
-    }
+.container{
+max-width:760px;
+margin:auto;
+}
 
-    .topbar{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      margin:0 0 16px;
-    }
+.header{
+display:flex;
+align-items:center;
+margin-bottom:20px;
+}
 
-    .back, .shield{
-      width:42px;
-      height:42px;
-      border-radius:50%;
-      border:1px solid #0d5136;
-      display:grid;
-      place-items:center;
-      color:var(--green);
-      background:rgba(7,47,32,.72);
-      text-decoration:none;
-      font-size:25px;
-      flex:0 0 auto;
-    }
+.back{
+width:42px;
+height:42px;
+border-radius:50%;
+border:1px solid #145236;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#35df96;
+font-size:24px;
+margin-right:14px;
+}
 
-    .title-wrap{
-      flex:1;
-      min-width:0;
-    }
+.title h1{
+font-size:28px;
+color:#62efb3;
+}
 
-    h1{
-      margin:0;
-      font-size:clamp(22px, 5vw, 31px);
-      line-height:1.15;
-      color:var(--heading);
-      font-weight:800;
-    }
+.title p{
+font-size:13px;
+color:#0d9258;
+margin-top:4px;
+}
 
-    .package{
-      margin-top:3px;
-      color:#0c8d58;
-      font-size:13px;
-      letter-spacing:.1px;
-    }
+.card{
+background:#08271d;
+border:1px solid #145236;
+border-radius:18px;
+overflow:hidden;
+margin-bottom:18px;
+}
 
-    .policy-card{
-      background:linear-gradient(180deg, rgba(12,47,34,.97), rgba(6,36,25,.97));
-      border:1px solid var(--border);
-      border-radius:22px;
-      overflow:hidden;
-      margin:0 0 17px;
-      box-shadow:0 10px 28px rgba(0,0,0,.12);
-    }
+.card-header{
+padding:16px 18px;
+font-size:18px;
+font-weight:bold;
+color:#5be8ae;
+border-bottom:1px solid rgba(255,255,255,.08);
+background:#0c3224;
+}
 
-    .policy-card.commitment{
-      padding:18px 20px 20px;
-    }
+.card-body{
+padding:18px;
+font-size:15px;
+color:#27d58b;
+}
 
-    .card-header{
-      display:flex;
-      align-items:center;
-      gap:11px;
-      padding:15px 18px;
-      font-size:18px;
-      font-weight:800;
-      color:var(--heading);
-      border-bottom:1px solid rgba(27,126,83,.35);
-      background:linear-gradient(90deg, rgba(13,65,43,.9), rgba(13,55,39,.45));
-    }
+.card-body p{
+margin-bottom:14px;
+}
 
-    .card-body{
-      padding:17px 20px 20px;
-      font-size:16px;
-    }
+.card-body strong{
+color:#dffff0;
+}
 
-    .commitment .card-header{
-      padding:0 0 10px;
-      border:0;
-      background:none;
-    }
+.verse{
+margin-top:18px;
+padding-top:18px;
+border-top:1px solid rgba(255,255,255,.08);
+text-align:right;
+font-size:22px;
+color:#2cc882;
+}
 
-    .icon{
-      width:23px;
-      text-align:center;
-      font-size:21px;
-      line-height:1;
-    }
+.translation{
+text-align:right;
+font-size:13px;
+color:#0c9058;
+margin-top:8px;
+}
+</style>
 
-    .accent-cyan{border-color:#0d4f4d}
-    .accent-cyan .card-header{color:var(--cyan); background:linear-gradient(90deg, rgba(10,70,65,.78), rgba(8,52,39,.38))}
-    .accent-blue{border-color:#263c72}
-    .accent-blue .card-header{color:#9692ff; background:linear-gradient(90deg, rgba(43,50,107,.7), rgba(15,50,38,.38))}
-    .accent-yellow{border-color:#544719}
-    .accent-yellow .card-header{color:var(--yellow); background:linear-gradient(90deg, rgba(76,67,17,.58), rgba(15,50,38,.35))}
-    .accent-purple{border-color:#4b315a}
-    .accent-purple .card-header{color:var(--purple); background:linear-gradient(90deg, rgba(67,40,83,.65), rgba(15,50,38,.35))}
-    .accent-pink{border-color:#5a2736}
-    .accent-pink .card-header{color:var(--pink); background:linear-gradient(90deg, rgba(83,36,51,.62), rgba(15,50,38,.35))}
-
-    p{margin:0 0 10px}
-    p:last-child{margin-bottom:0}
-
-    strong{color:#ccffe3}
-
-    em{color:#b8f4d2}
-
-    .verse{
-      border-top:1px solid rgba(42,119,82,.25);
-      margin-top:16px;
-      padding-top:15px;
-      text-align:right;
-      color:#168f5a;
-      font-family:"Noto Naskh Arabic","Amiri","Segoe UI",serif;
-      font-size:18px;
-    }
-
-    .translation{
-      text-align:right;
-      color:#0b7549;
-      font-size:13px;
-      margin-top:4px;
-    }
-
-    .links-title{
-      color:#4ddaa2;
-      font-weight:800;
-      letter-spacing:.7px;
-      font-size:14px;
-      text-transform:uppercase;
-      margin-bottom:10px;
-    }
-
-    .privacy-links{
-      display:grid;
-      gap:3px;
-    }
-
-    .privacy-links a{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:14px;
-      padding:11px 0;
-      color:#26d98c;
-      text-decoration:none;
-      border-bottom:1px solid rgba(31,105,70,.22);
-    }
-
-    .privacy-links a:last-child{border-bottom:0}
-
-    .privacy-links span:last-child{
-      color:#177e53;
-      white-space:nowrap;
-      font-size:14px;
-    }
-
-    .contact-box{
-      border:1px solid #0d5638;
-      padding:18px 20px 20px;
-    }
-
-    .contact-title{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      color:#37e29b;
-      font-size:18px;
-      font-weight:800;
-      margin-bottom:10px;
-    }
-
-    .team{
-      color:#187f51;
-      font-size:13px;
-      margin-top:7px;
-    }
-
-    .email{
-      display:inline-flex;
-      align-items:center;
-      gap:9px;
-      margin-top:12px;
-      padding:10px 14px;
-      border-radius:14px;
-      border:1px solid #137348;
-      background:linear-gradient(180deg,#0d4932,#0a3928);
-      color:#83f2bd;
-      text-decoration:none;
-      font-weight:700;
-      word-break:break-all;
-    }
-
-    .updated{
-      text-align:center;
-      font-size:13px;
-      color:#0d6f45;
-      margin:20px 0 14px;
-    }
-
-    .close-btn{
-      display:block;
-      width:100%;
-      padding:15px 18px;
-      border:0;
-      border-radius:16px;
-      background:linear-gradient(90deg,#157343,#0e5c38);
-      color:white;
-      font-weight:800;
-      font-size:17px;
-      text-align:center;
-      text-decoration:none;
-      box-shadow:0 7px 16px rgba(0,0,0,.18);
-    }
-
-    footer{
-      text-align:center;
-      color:#0a6941;
-      font-size:13px;
-      padding:18px 0 4px;
-    }
-
-    @media (max-width:480px){
-      .page{padding:14px 14px 34px}
-      .policy-card{border-radius:18px}
-      .card-header{font-size:16px;padding:14px 16px}
-      .card-body{font-size:15px;padding:15px 17px 18px}
-      .commitment{padding:16px 17px 18px!important}
-      .back,.shield{width:38px;height:38px}
-    }
-  </style>
 </head>
 
 <body>
-  <main class="page">
-    <header class="topbar">
-      <a class="back" href="javascript:history.back()" aria-label="Go back">‹</a>
-      <div class="title-wrap">
-        <h1>Privacy Policy</h1>
-        <div class="package">Noor Quran · com.sj64noorquran</div>
-      </div>
-      <div class="shield" aria-hidden="true">♢</div>
-    </header>
 
-    <section class="policy-card commitment">
-      <div class="card-header">
-        <span class="icon">♢</span>
-        <span>Our Commitment to You</span>
-      </div>
-      <p>Noor Quran was built as a free service to the Muslim community. We take your privacy seriously — we do not collect personal data, we do not track you, and we do not sell your information. This policy explains exactly what we do and do not do.</p>
-      <div class="verse" lang="ar" dir="rtl">وَاللَّهُ يَعْلَمُ مَا تُسِرُّونَ وَمَا تُعْلِنُونَ</div>
-      <div class="translation">“Allah knows what you conceal and what you reveal.” — Quran 16:19</div>
-    </section>
+<div class="container">
 
-    <section class="policy-card">
-      <div class="card-header"><span class="icon">▣</span><span>Information We Collect</span></div>
-      <div class="card-body">
-        <p>Noor Quran does <strong>not</strong> collect any personally identifiable information (PII) such as your name, email address, or phone number. The only data stored is your in-app preferences — chosen language, city, dark-mode setting, bookmarks, and favorites — and these are stored <em>locally on your device only</em>. No personal data is ever transmitted to our servers.</p>
-      </div>
-    </section>
+<div class="header">
 
-    <section class="policy-card accent-cyan">
-      <div class="card-header"><span class="icon">⌖</span><span>Location Permission</span></div>
-      <div class="card-body">
-        <p>The app may request access to your device's GPS location to automatically detect your city and calculate accurate <strong>Prayer Times</strong> and <strong>Qibla direction</strong>. Your precise coordinates are used solely for this calculation and are never uploaded, stored on a remote server, or shared with third parties. You can also enter your city manually at any time without granting location permission.</p>
-      </div>
-    </section>
+<div class="back">
+←
+</div>
 
-    <section class="policy-card accent-yellow">
-      <div class="card-header"><span class="icon">♢</span><span>Notification Permission</span></div>
-      <div class="card-body">
-        <p>If you enable Islamic reminders (Dhikr, prayer alerts), the app requests notification permission from your device. All notifications are <strong>scheduled locally</strong> — no push-notification service or external server is involved. Turning off notifications in your device settings will stop all reminders immediately.</p>
-      </div>
-    </section>
+<div class="title">
+<h1>Privacy Policy</h1>
+<p>Noor Quran · com.sj64noorquran</p>
+</div>
 
-    <section class="policy-card accent-purple">
-      <div class="card-header"><span class="icon">◖</span><span>Quran Audio Streaming</span></div>
-      <div class="card-body">
-        <p>Audio recitations are streamed on-demand from <strong>cdn.islamic.network</strong>, a trusted public Islamic CDN. When you play or download an ayah, a standard HTTP request is sent to fetch the audio file. No account, login, or personal identifier is attached to these requests. Downloaded audio is saved locally in your browser's IndexedDB for offline use and never shared.</p>
-      </div>
-    </section>
+</div>
 
-    <section class="policy-card accent-pink">
-      <div class="card-header"><span class="icon">$</span><span>Advertising — Google AdMob</span></div>
-      <div class="card-body">
-        <p>To support the free development of Noor Quran, ads provided by <strong>Google AdMob</strong> may be displayed when the app runs as a native Android application. Google may use your device's advertising ID (GAID) for ad personalisation in accordance with Google's Privacy Policy. You can opt out of personalised ads through your Android device settings under <em>Google → Ads</em>. The web version of Noor Quran does not serve AdMob ads.</p>
-      </div>
-    </section>
+<div class="card">
 
-    <section class="policy-card accent-cyan">
-      <div class="card-header"><span class="icon">▤</span><span>Local Storage &amp; Offline Data</span></div>
-      <div class="card-body">
-        <p>Bookmarks, favorites, Tasbeeh counts, notification preferences, downloaded surah text, and language settings are stored in your browser's <strong>localStorage</strong> and <strong>IndexedDB</strong>. This data remains entirely on your device. Clearing your browser/app data will erase these preferences.</p>
-      </div>
-    </section>
+<div class="card-header">
+🛡 Our Commitment to You
+</div>
 
-    <section class="policy-card accent-blue">
-      <div class="card-header"><span class="icon">⌁</span><span>Third-Party API Usage</span></div>
-      <div class="card-body">
-        <p>Noor Quran fetches Quran text and translations from <strong>api.alquran.cloud</strong> and prayer times from <strong>api.aladhan.com</strong>. These are free public Islamic APIs. Requests include only query parameters (surah number, city name, etc.) — no personal identifiers are appended.</p>
-      </div>
-    </section>
+<div class="card-body">
 
-    <section class="policy-card">
-      <div class="card-header"><span class="icon">▢</span><span>Data Security &amp; Sharing</span></div>
-      <div class="card-body">
-        <p>Noor Quran does not sell, rent, or share your personal data with any third party beyond the service providers described above. We have no analytics SDK, crash-reporting service, or tracking library embedded in the app. Your usage of this app remains private.</p>
-      </div>
-    </section>
+<p>
+Noor Quran was created as a free Islamic application for the Muslim community.
+We respect your privacy and are committed to protecting your personal information.
+</p>
 
-    <section class="policy-card">
-      <div class="card-body">
-        <h2 style="margin:0 0 8px;color:#45dda0;font-size:18px;">Children's Privacy</h2>
-        <p>Noor Quran does not knowingly collect personal information from children under 13. The app is designed for general audiences and contains Islamic educational content suitable for all ages. No age-gated features or account creation is required.</p>
-      </div>
-    </section>
+<p>
+We do not require account registration, and Noor Quran itself does not intentionally collect your name, email address, phone number, or other personally identifiable information.
+This Privacy Policy explains how the application works, what information may be processed, and how third-party services are used.
+</p>
 
-    <section class="policy-card">
-      <div class="card-body">
-        <h2 style="margin:0 0 8px;color:#45dda0;font-size:18px;">Policy Changes</h2>
-        <p>We may update this Privacy Policy occasionally. Any changes will be reflected on this page with a revised effective date. Continued use of Noor Quran after changes constitutes acceptance of the updated policy.</p>
-      </div>
-    </section>
+<div class="verse">
+وَاللَّهُ يَعْلَمُ مَا تُسِرُّونَ وَمَا تُعْلِنُونَ
+</div>
 
-    <section class="policy-card">
-      <div class="card-body">
-        <div class="links-title">Third-Party Privacy Policies</div>
-        <div class="privacy-links">
-          <a href="https://alquran.cloud/privacy" target="_blank" rel="noopener noreferrer"><span>AlQuran Cloud API</span><span>View Policy →</span></a>
-          <a href="https://aladhan.com/privacy-policy" target="_blank" rel="noopener noreferrer"><span>Aladhan Prayer Times API</span><span>View Policy →</span></a>
-          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer"><span>Google AdMob</span><span>View Policy →</span></a>
-          <a href="https://islamic.network/privacy" target="_blank" rel="noopener noreferrer"><span>Islamic Network CDN</span><span>View Policy →</span></a>
-        </div>
-      </div>
-    </section>
+<div class="translation">
+"Allah knows what you conceal and what you reveal."
+— Quran 16:19
+</div>
 
-    <section class="policy-card contact-box">
-      <div class="contact-title"><span>✉</span><span>Contact Us</span></div>
-      <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact the Noor Quran Team:</p>
-      <div class="team">The Noor Quran Team</div>
-      <a class="email" href="mailto:easygroupjoin@gmail.com"><span>✉</span> easygroupjoin@gmail.com</a>
-    </section>
+</div>
 
-    <div class="updated">Last updated: July 2026 &nbsp;·&nbsp; Effective immediately</div>
-    <a class="close-btn" href="javascript:history.back()">Close</a>
+</div>
 
-    <footer>Noor Quran © 2026 July· The Noor Quran Team</footer>
-  </main>
+<div class="card">
+
+<div class="card-header">
+📖 Information We Collect
+</div>
+
+<div class="card-body">
+
+<p>
+Noor Quran does <strong>not</strong> ask you to create an account and does not directly collect personally identifiable information such as your name, email address, phone number, or password.
+</p>
+
+<p>
+The application stores your personal preferences locally on your device, including your selected language, bookmarks, favorites, Tasbeeh count, notification settings, downloaded content, and appearance preferences.
+</p>
+
+<p>
+Some third-party services used by Noor Quran, such as advertising or content providers, may automatically receive limited technical information (for example IP address, device information, or advertising identifiers) according to their own Privacy Policies.
+</p>
+
+</div>
+
+</div>
+<div class="card">
+
+<div class="card-header">
+📍 Location Permission
+</div>
+
+<div class="card-body">
+
+<p>
+Noor Quran may request access to your device's location to automatically detect your city and calculate accurate <strong>Prayer Times</strong> and the correct <strong>Qibla direction</strong>.
+</p>
+
+<p>
+Your location is used only to provide these Islamic features. Noor Quran does not create a personal location history or require you to create an account.
+</p>
+
+<p>
+If you prefer, you can manually enter your city without granting location permission.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-header">
+🔔 Notification Permission
+</div>
+
+<div class="card-body">
+
+<p>
+If you enable Prayer reminders, Azan notifications, or Dhikr reminders, Noor Quran will request notification permission from your device.
+</p>
+
+<p>
+These reminders are intended to run locally on your device. Their delivery may also depend on your operating system, battery optimization settings, and notification permissions.
+</p>
+
+<p>
+You may disable notifications at any time from your Android device settings.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-header">
+🎧 Quran Audio Streaming
+</div>
+
+<div class="card-body">
+
+<p>
+Quran recitations may be streamed or downloaded from <strong>cdn.islamic.network</strong> or other trusted Islamic content providers used by Noor Quran.
+</p>
+
+<p>
+Whenever you play or download audio, your device sends a normal internet request to the provider in order to deliver the requested audio file.
+</p>
+
+<p>
+Downloaded recitations are stored locally on your device for offline listening. Removing app data or uninstalling the application may delete downloaded files.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-header">
+📢 Advertising — Google AdMob
+</div>
+
+<div class="card-body">
+
+<p>
+To support the continued development of Noor Quran, the Android version of the application may display advertisements provided by <strong>Google AdMob</strong>.
+</p>
+
+<p>
+Google and its partners may process technical information such as your Advertising ID, IP address, device information, app interactions, and approximate location according to Google's Privacy Policy.
+</p>
+
+<p>
+Depending on your country and privacy settings, advertisements may be personalized or non-personalized.
+</p>
+
+<p>
+You can manage your advertising preferences through your Android or Google privacy settings at any time.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-header">
+💾 Local Storage & Offline Data
+</div>
+
+<div class="card-body">
+
+<p>
+Noor Quran stores your bookmarks, favorites, Tasbeeh counter, downloaded Surahs, selected language, notification preferences, appearance settings, and other app preferences locally on your device.
+</p>
+
+<p>
+This information is stored using your device's local storage technologies, such as localStorage, IndexedDB, or application storage, depending on your platform.
+</p>
+
+<p>
+Clearing application data, clearing browser storage, uninstalling the application, or resetting your device may permanently remove this locally stored information.
+</p>
+
+</div>
+
+</div>
+  <div class="card">
+
+<div class="card-header">
+🌐 Third-Party APIs & Services
+</div>
+
+<div class="card-body">
+
+<p>
+Noor Quran uses trusted third-party services to provide Quran text, translations, prayer times, Qibla calculations, audio streaming, and advertisements.
+</p>
+
+<p>
+These services may include:
+</p>
+
+<p>
+<strong>• AlQuran Cloud API</strong> — Quran text and translations.<br><br>
+
+<strong>• Aladhan Prayer Times API</strong> — Prayer Times and Qibla calculations.<br><br>
+
+<strong>• Islamic Network CDN</strong> — Quran audio streaming.<br><br>
+
+<strong>• Google AdMob</strong> — Advertising in the Android application.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-header">
+🔒 Data Sharing & Security
+</div>
+
+<div class="card-body">
+
+<p>
+Noor Quran does not sell or rent your personal information.
+</p>
+
+<p>
+Information may only be processed by the trusted service providers described in this Privacy Policy when necessary to provide app functionality, display advertisements, prevent fraud, comply with legal obligations, or protect the security of the application.
+</p>
+
+<p>
+Although we use reasonable security practices, no application or internet service can guarantee absolute security.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-header">
+👶 Children's Privacy
+</div>
+
+<div class="card-body">
+
+<p>
+Noor Quran is intended for a general audience and contains Islamic educational content suitable for all ages.
+</p>
+
+<p>
+The application does not knowingly collect personal information from children under the age of 13.
+</p>
+
+<p>
+Parents and guardians are encouraged to supervise children's use of internet-connected features where appropriate.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-header">
+📝 Policy Changes
+</div>
+
+<div class="card-body">
+
+<p>
+We may update this Privacy Policy from time to time as the application evolves or legal requirements change.
+</p>
+
+<p>
+Any updates will be published on this page with a revised "Last Updated" date.
+</p>
+
+<p>
+Your continued use of Noor Quran after changes become effective constitutes acceptance of the updated Privacy Policy.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-header">
+📜 Terms of Service
+</div>
+
+<div class="card-body">
+
+<p>
+Your use of Noor Quran is also governed by our Terms of Service.
+Please read them together with this Privacy Policy.
+</p>
+
+<p style="margin-top:15px">
+
+<a href="https://sjmirali354-hash.github.io/noor-quran-privacy-policy/Terms.html"
+target="_blank"
+style="
+display:inline-block;
+background:#0d6a41;
+color:white;
+padding:12px 18px;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;">
+Read Terms of Service →
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-header">
+🔗 Third-Party Privacy Policies
+</div>
+
+<div class="card-body">
+
+<p>
+For more information, please review the Privacy Policies of the third-party services used by Noor Quran.
+</p>
+
+<p>
+
+<a href="https://alquran.cloud/" target="_blank">AlQuran Cloud API</a><br><br>
+
+<a href="https://aladhan.com/" target="_blank">Aladhan Prayer Times API</a><br><br>
+
+<a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a><br><br>
+
+<a href="https://support.google.com/admob/answer/6128543" target="_blank">Google AdMob Privacy</a><br><br>
+
+<a href="https://islamic.network/" target="_blank">Islamic Network</a>
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-header">
+✉ Contact Us
+</div>
+
+<div class="card-body">
+
+<p>
+If you have any questions or concerns regarding this Privacy Policy, please contact us.
+</p>
+
+<p style="margin-top:15px">
+
+<strong>The Noor Quran Team</strong><br><br>
+
+<a href="mailto:easygroupjoin@gmail.com"
+style="color:#5de8af;text-decoration:none;">
+easygroupjoin@gmail.com
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+
+<p style="
+text-align:center;
+color:#0f8d59;
+margin:25px 0 15px;
+font-size:13px;">
+Last Updated: 21 July 2026 • Effective Immediately
+</p>
+
+
+<div style="text-align:center;margin-bottom:25px;">
+
+<button
+onclick="history.back()"
+style="
+background:#0d6a41;
+color:white;
+border:none;
+padding:14px 35px;
+border-radius:14px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;">
+Close
+</button>
+
+</div>
+
+
+<footer style="
+text-align:center;
+color:#0b7448;
+font-size:13px;
+padding-bottom:20px;">
+
+Noor Quran © 2026 · The Noor Quran Team
+
+</footer>
+
+</div>
+
 </body>
 </html>
